@@ -50,9 +50,16 @@ function enlever() {
     document.getElementById("nb").innerHTML = nb
 }
 
+function reset() {
+    nb=0;
+    document.getElementById("nb").innerHTML = nb;
+    document.getElementById("msg").innerHTML = "";
+}
+
 
 document.getElementById("ajouter").addEventListener("click", ajouter);
 document.getElementById("enlever").addEventListener("click", enlever);
+document.getElementById("reset").addEventListener("click", reset);
 
 
 
